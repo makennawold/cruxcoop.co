@@ -3,13 +3,14 @@ import { useForm } from "react-hook-form";
 
 const axios = require("axios");
 
-export default function SignupForm() {
+export default function SignupForm(props) {
   const { register, handleSubmit, reset } = useForm();
   const onSubmit = (data) => {
     axios.post("http://localhost:5000", { data }).catch(function(error) {
       console.log(error);
     });
     console.log(data);
+    props.updateRegistration(true);
     reset();
   };
 
