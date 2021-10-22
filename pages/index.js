@@ -14,7 +14,10 @@ export default function Home() {
       </div>
       <div className="form-container">
         {registered === true ? (
-          <p>thank you</p>
+          <div className="thank-you">
+            <p>You have been registered for updates.</p>
+            <p>Thank you</p>
+          </div>
         ) : (
           <SignupForm updateRegistration={setRegistered} />
         )}

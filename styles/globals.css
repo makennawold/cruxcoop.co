@@ -107,6 +107,26 @@ body {
   .form-container form #submit-button:hover {
     background-color: #921111b9;
   }
+  .thank-you {
+    width: 300px;
+    height: 100px;
+    border-radius: 12px;
+    background-color: #921111;
+    font-size: 18px;
+    font-family: "Cormorant Garamond", serif;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .thank-you:hover {
+    background-color: #921111b9;
+  }
+  .thank-you p {
+    font-size: 18px;
+    font-family: "Cormorant Garamond", serif;
+  }
 }
 @media screen and (min-width: 600px) {
   .home-container {
