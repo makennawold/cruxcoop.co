@@ -1,0 +1,8 @@
+.crux-header {
+  width: 100vw;
+  background-color: black;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
