@@ -6,11 +6,6 @@ const axios = require("axios");
 export default function SignupForm() {
   const { register, handleSubmit, reset } = useForm();
   const onSubmit = (data) => {
-    // axios({
-    //   method: "post",
-    //   url: "",
-    //   data: { data },
-    // })
     axios.post("http://localhost:5000", { data }).catch(function(error) {
       console.log(error);
     });
